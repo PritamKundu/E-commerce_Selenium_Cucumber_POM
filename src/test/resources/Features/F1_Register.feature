@@ -16,6 +16,7 @@ Feature: User registers a new account
     And user enters "<password>" in password
     And user enters "<confPassword>" in confirm password
     Then error message for invalid data appears "<user count>"
+
     Examples:
       |user count|firstname  |lastname |email| password|confPassword|
       |1 |abc  |abc |abcdef| 123456|123456|
