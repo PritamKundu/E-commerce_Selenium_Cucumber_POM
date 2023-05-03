@@ -69,6 +69,7 @@ public class S1_RegisterStep  {
                     System.out.println("Exception in Email");
                 }
                 break;
+
             case "2":
                 try {
                     String actualPassword = driver.findElement(By.xpath("//span/p")).getText();
@@ -86,6 +87,7 @@ public class S1_RegisterStep  {
                     System.out.println("Exception in Confirm Password");
                 }
                 break;
+
             default:
                 System.out.println("unknown test");
 }
