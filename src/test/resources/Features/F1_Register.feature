@@ -9,6 +9,7 @@ Feature: User registers a new account
     And user enters "123456" in confirm password
     Then the user is registered and successfully and the message "Your registration completed" appears
 
+
   Scenario Outline: User registers with invalid data
     Given We are on register page
     When user enters "<firstname>" in the first name and "<lastname>" in the last name
