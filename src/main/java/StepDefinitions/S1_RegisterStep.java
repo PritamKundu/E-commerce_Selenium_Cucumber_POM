@@ -65,7 +65,6 @@ public class S1_RegisterStep  {
                 try {
                     String actualEmail = driver.findElement(By.id("Email-error")).getText();
                     Assert.assertTrue("Error in Email", expectedEmail.equalsIgnoreCase(actualEmail));
-                    System.out.println(actualEmail);
                 } catch (NoSuchElementException e) {
                     System.out.println("Exception in Email");
                 }
@@ -74,7 +73,6 @@ public class S1_RegisterStep  {
                 try {
                     String actualPassword = driver.findElement(By.xpath("//span/p")).getText();
                     Assert.assertTrue("Error in Password", expectedPassword.equalsIgnoreCase(actualPassword));
-                    System.out.println(actualPassword);
                 } catch (NoSuchElementException e) {
                     System.out.println("Exception in Password");
                 }
@@ -84,7 +82,6 @@ public class S1_RegisterStep  {
                 try {
                     String actualConfirmPassword = driver.findElement(By.id("ConfirmPassword-error")).getText();
                     Assert.assertTrue("Error in Password Confirmation", expectedConfirmPassword.equalsIgnoreCase(actualConfirmPassword));
-                    System.out.println(actualConfirmPassword);
                 } catch (NoSuchElementException e) {
                     System.out.println("Exception in Confirm Password");
                 }
