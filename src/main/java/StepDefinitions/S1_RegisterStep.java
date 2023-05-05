@@ -70,6 +70,7 @@ public class S1_RegisterStep  {
                 }
                 break;
 
+
             case "2":
                 try {
                     String actualPassword = driver.findElement(By.xpath("//span/p")).getText();
