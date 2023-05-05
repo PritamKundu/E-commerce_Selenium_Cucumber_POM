@@ -79,6 +79,7 @@ public class S1_RegisterStep  {
                 }
                 break;
 
+
             case "3":
                 try {
                     String actualConfirmPassword = driver.findElement(By.id("ConfirmPassword-error")).getText();
