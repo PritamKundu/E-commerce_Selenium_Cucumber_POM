@@ -37,6 +37,7 @@ public class HomePage {
         drv.findElement(logIn).click();
         return new Login();
     }
+
     public Cart ClkCart(){
         drv.findElement(cart).click();
         return new Cart();
