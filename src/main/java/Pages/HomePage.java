@@ -28,6 +28,7 @@ public class HomePage {
         return currency;
     }
 
+
     public Registation clkRegister(){
         drv.findElement(register).click();
         return new Registation();
